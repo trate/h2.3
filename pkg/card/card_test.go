@@ -3,6 +3,7 @@ package card
 import (
 	"reflect"
 	"testing"
+	"time"
 )
 
 func TestCard_TransactionsSortBySum(t *testing.T) {
@@ -31,7 +32,7 @@ func TestCard_TransactionsSortBySum(t *testing.T) {
 					{
 						Id:     1,
 						Amount: -12_000_00,
-						Date:   12342345442,
+						Date:   time.Date(2020, 3, 1, 0, 0, 0, 0, time.UTC),
 						MCC:    "5812",
 						Status: "InProgress",
 					},
@@ -41,7 +42,7 @@ func TestCard_TransactionsSortBySum(t *testing.T) {
 				{
 					Id:     1,
 					Amount: -12_000_00,
-					Date:   12342345442,
+					Date:   time.Date(2020, 3, 1, 0, 0, 0, 0, time.UTC),
 					MCC:    "5812",
 					Status: "InProgress",
 				},
@@ -59,21 +60,21 @@ func TestCard_TransactionsSortBySum(t *testing.T) {
 					{
 						Id:     1,
 						Amount: -12_000_00,
-						Date:   12342345442,
+						Date:   time.Date(2020, 7, 1, 0, 0, 0, 0, time.UTC),
 						MCC:    "5812",
 						Status: "InProgress",
 					},
 					{
 						Id:     1,
 						Amount: -124_000_00,
-						Date:   12342345442,
+						Date:   time.Date(2020, 7, 1, 0, 0, 0, 0, time.UTC),
 						MCC:    "5812",
 						Status: "InProgress",
 					},
 					{
 						Id:     1,
 						Amount: 12_000_00,
-						Date:   12342345442,
+						Date:   time.Date(2020, 7, 1, 0, 0, 0, 0, time.UTC),
 						MCC:    "5812",
 						Status: "InProgress",
 					},
@@ -83,21 +84,21 @@ func TestCard_TransactionsSortBySum(t *testing.T) {
 				{
 					Id:     1,
 					Amount: 12_000_00,
-					Date:   12342345442,
+					Date:   time.Date(2020, 7, 1, 0, 0, 0, 0, time.UTC),
 					MCC:    "5812",
 					Status: "InProgress",
 				},
 				{
 					Id:     1,
 					Amount: -12_000_00,
-					Date:   12342345442,
+					Date:   time.Date(2020, 7, 1, 0, 0, 0, 0, time.UTC),
 					MCC:    "5812",
 					Status: "InProgress",
 				},
 				{
 					Id:     1,
 					Amount: -124_000_00,
-					Date:   12342345442,
+					Date:   time.Date(2020, 7, 1, 0, 0, 0, 0, time.UTC),
 					MCC:    "5812",
 					Status: "InProgress",
 				},
